@@ -19,7 +19,9 @@
 
 []Crear Salas disponibles en el ReservaManager
 
+[]Implementar que el horario final sea mayor al horario inicial
+
 []Agregar Tests:
     [] Reserva Fuera de Horario Válido
-    [] Multiples reservas en un mismo día
+    [x] Multiples reservas en un mismo día
     
