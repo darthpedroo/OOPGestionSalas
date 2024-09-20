@@ -1,0 +1,14 @@
+RESERVAS_ACTUALES:
+
+-Reserva 1: 3-5
+-Reserva 2: 4-6
+-Reserva 3: 7-9
+
+MI RESERVA: 1-2
+
+(reserva.hora_inicio > mi reserva.hora_inicio and reserva.hora_inicio < mi_reserva.hora_fin)
+or
+(reserva.hora_fin < mi reserva.hora_fin and reserva.hora_fin > reserva.hora_inicio):
+
+    return True
+

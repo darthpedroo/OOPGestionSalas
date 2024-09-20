@@ -12,4 +12,4 @@ class ReservaPerteneceOtroUsuario(Exception):
 
 class NumeroMenorAZero(Exception):
     def __init__(self):
-        super().__init__("La Reserva Pertenece a otro usuario")
+        super().__init__("Numero es Menor A Cero")

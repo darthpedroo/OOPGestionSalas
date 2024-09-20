@@ -1,7 +1,7 @@
 from reserva import Reserva
 from reservableprogramado import Reservable 
 from fecha import Fecha
-from hora import Hora
+from tiempo import Hora 
 from exceptions import ReservableYaReservado, NoExisteLaReserva, ReservaPerteneceOtroUsuario
 #from usuario import Usuario
 class ReservaManager:
@@ -19,7 +19,7 @@ class ReservaManager:
     
     def reserva_esta_ocupada(self,otra_reserva: Reserva):
         for reserva in self._todas_las_reservas:
-            if reserva == otra_reserva:
+            if otra_reserva.esta_en_el_intervalo_de(reserva):
                 return True
             continue
         return False 

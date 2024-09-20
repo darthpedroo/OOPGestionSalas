@@ -1,5 +1,7 @@
 from fecha import Fecha
-from hora import Hora
+
+from tiempo import Tiempo
+
 from abc import ABC, abstractmethod
 
 class Reservable(ABC):
@@ -19,7 +21,7 @@ class ReservableProgramado(Reservable):
         self._nombre = nombre
 
     @abstractmethod
-    def usuario_me_realizo_una_reserva(self,usuario:"Usuario", fecha_reserva:Fecha, hora_inicio_reserva: Hora, hora_fin_reserva: Hora):
+    def usuario_me_realizo_una_reserva(self,usuario:"Usuario", fecha_reserva:Fecha, hora_inicio_reserva: Tiempo, hora_fin_reserva: Tiempo):
         pass
 
 class ReservableSinHora(Reservable):
