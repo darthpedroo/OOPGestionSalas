@@ -11,6 +11,8 @@
 
 []Crear una clase que encapsule los distintos atributos que se pueden pasar a los PROGRAMABLES
 
+[] Revisar que los tiempos no se superpongan
+
 [x]No validar que los dias sean los del calendario
 
 []Comparar tupla Año Mes Día Hora Minuto Segundo contra la otra tupla para ver si la fecha es mayor

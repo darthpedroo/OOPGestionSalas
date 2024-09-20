@@ -7,6 +7,9 @@ class NoExisteLaReserva(Exception):
         super().__init__("La Reserva No Existe")
 
 class ReservaPerteneceOtroUsuario(Exception):
-     def __init__(self):
+    def __init__(self):
         super().__init__("La Reserva Pertenece a otro usuario")
 
+class NumeroMenorAZero(Exception):
+    def __init__(self):
+        super().__init__("La Reserva Pertenece a otro usuario")
